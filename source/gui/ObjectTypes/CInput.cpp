@@ -1602,10 +1602,9 @@ void CInput::UpdateText(int from, int to_before, int to_after)
 		//  actually remove the entire lines they are on, it'll all have
 		//  to be redone. And when going along, we'll delete a row at a time
 		//  when continuing to see how much more after 'to' we need to remake.
-		int i = 0;
 		for (std::list<SRow>::iterator it = m_CharacterPositions.begin();
 		     it != m_CharacterPositions.end();
-		     ++it, ++i)
+		     ++it)
 		{
 			if (!destroy_row_from_used && it->m_ListStart > from)
 			{
