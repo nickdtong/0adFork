@@ -1174,7 +1174,7 @@ function getEntityNamesFormatted(template)
 			setStringTags(primaryName.slice(1).toUpperCase(), g_TooltipTextFormats.namePrimarySmall)
 		});
 
-	// Translation: Example: "Epibátēs Athēnaîos [font="sans-bold-16"](Athenian Marine)[/font]"
+	// Translation: Example: "Epibatēs Athēnaios [font="sans-bold-16"](Athenian Marine)[/font]"
 	return sprintf(translate("%(primaryName)s (%(secondaryName)s)"), {
 		"primaryName":
 			setStringTags(primaryName[0], g_TooltipTextFormats.namePrimaryBig) +

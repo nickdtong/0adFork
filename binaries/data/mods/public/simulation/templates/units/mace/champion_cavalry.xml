@@ -4,7 +4,7 @@
     <Civ>mace</Civ>
     <Lang>greek</Lang>
     <GenericName>Companion Cavalry</GenericName>
-    <SpecificName>Hetaîros</SpecificName>
+    <SpecificName>Hetairos</SpecificName>
     <Icon>units/mace/champion_cavalry.png</Icon>
     <SelectionGroupName>units/mace/champion_cavalry</SelectionGroupName>
   </Identity>

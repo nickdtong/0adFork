@@ -11,7 +11,7 @@
     <Civ>ptol</Civ>
     <SelectionGroupName>units/ptol/infantry_pikeman_b</SelectionGroupName>
     <GenericName>Egyptian Pikeman</GenericName>
-    <SpecificName>Phalaggomákhimos</SpecificName>
+    <SpecificName>Phalaggomakhimos</SpecificName>
     <Icon>units/ptol/infantry_spearman.png</Icon>
   </Identity>
   <Promotion>

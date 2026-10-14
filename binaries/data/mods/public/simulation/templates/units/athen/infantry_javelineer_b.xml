@@ -3,7 +3,7 @@
   <Identity>
     <SelectionGroupName>units/athen/infantry_javelineer_b</SelectionGroupName>
     <GenericName>Thracian Peltast</GenericName>
-    <SpecificName>Peltastḗs Thrâx</SpecificName>
+    <SpecificName>Peltastēs Thrax</SpecificName>
     <Icon>units/athen/infantry_javelinist.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_town</Techs>

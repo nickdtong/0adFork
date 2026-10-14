@@ -2,7 +2,7 @@
 <Entity parent="civ/athen|hoplite|spec_champ|template_unit_champion_infantry_spearman">
   <Identity>
     <GenericName>City Guard</GenericName>
-    <SpecificName>Epílektos</SpecificName>
+    <SpecificName>Epilektos</SpecificName>
     <Icon>units/athen/champion_infantry.png</Icon>
   </Identity>
   <VisualActor>

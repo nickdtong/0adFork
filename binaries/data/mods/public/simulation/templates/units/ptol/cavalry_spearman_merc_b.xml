@@ -4,7 +4,7 @@
     <Civ>ptol</Civ>
     <SelectionGroupName>units/ptol/cavalry_spearman_merc_b</SelectionGroupName>
     <GenericName>Macedonian Settler Cavalry</GenericName>
-    <SpecificName>Hippeús Makedonikós</SpecificName>
+    <SpecificName>Hippeus Makedonikos</SpecificName>
     <Icon>units/ptol/cavalry_spearman.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_town</Techs>

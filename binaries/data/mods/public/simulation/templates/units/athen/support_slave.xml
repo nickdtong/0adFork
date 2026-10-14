@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="civ/athen|template_unit_support_slave">
   <Identity>
-    <SpecificName>Doûlos</SpecificName>
+    <SpecificName>Doulos</SpecificName>
     <Icon>units/global/slave.png</Icon>
   </Identity>
   <VisualActor>

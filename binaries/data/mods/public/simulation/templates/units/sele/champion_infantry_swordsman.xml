@@ -4,7 +4,7 @@
     <Civ>sele</Civ>
     <Lang>greek</Lang>
     <GenericName>Romanized Heavy Swordsman</GenericName>
-    <SpecificName>Thorakitès Rhomaïkós</SpecificName>
+    <SpecificName>Thorakites Rhōmaikos</SpecificName>
     <Icon>units/sele/champion_swordsman.png</Icon>
     <Requirements>
       <Techs datatype="tokens">-phase_city reformed_army_sele</Techs>

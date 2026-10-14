@@ -10,7 +10,7 @@
   <Identity>
     <Civ>ptol</Civ>
     <GenericName>Gallic Mercenary Swordsman</GenericName>
-    <SpecificName>Gallikós Mistophorós</SpecificName>
+    <SpecificName>Gallikos Mistophoros</SpecificName>
     <SelectionGroupName>units/ptol/infantry_swordsman_merc_b</SelectionGroupName>
     <Icon>units/cart/infantry_swordsman.png</Icon>
     <Requirements>

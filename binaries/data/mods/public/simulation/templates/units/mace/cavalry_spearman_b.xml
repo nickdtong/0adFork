@@ -5,7 +5,7 @@
     <Lang>greek</Lang>
     <SelectionGroupName>units/mace/cavalry_spearman_b</SelectionGroupName>
     <GenericName>Thessalian Lancer</GenericName>
-    <SpecificName>Xystophóros Thessalikós</SpecificName>
+    <SpecificName>Xystophoros Thessalikos</SpecificName>
     <Icon>units/mace/cavalry_spearman.png</Icon>
   </Identity>
   <Promotion>

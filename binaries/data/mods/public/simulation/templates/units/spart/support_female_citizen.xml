@@ -24,7 +24,7 @@
     <Civ>spart</Civ>
     <Lang>greek</Lang>
     <GenericName>Spartan Woman</GenericName>
-    <SpecificName>Spartiâtis</SpecificName>
+    <SpecificName>Spartiatis</SpecificName>
     <Icon>units/spart/support_female_citizen.png</Icon>
   </Identity>
   <UnitAI>

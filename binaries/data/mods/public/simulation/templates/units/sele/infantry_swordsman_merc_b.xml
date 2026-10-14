@@ -10,7 +10,7 @@
     <Lang>greek</Lang>
     <SelectionGroupName>units/sele/infantry_swordsman_merc_b</SelectionGroupName>
     <GenericName>Thracian Mercenary Swordsman</GenericName>
-    <SpecificName>Rhomphaiaphoros Thrakikós</SpecificName>
+    <SpecificName>Rhomphaiaphoros Thrakikos</SpecificName>
     <Icon>units/sele/infantry_swordsman.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_town</Techs>

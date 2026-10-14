@@ -5,7 +5,7 @@
     <Lang>greek</Lang>
     <SelectionGroupName>units/sele/infantry_javelineer_b</SelectionGroupName>
     <GenericName>Arab Javelineer</GenericName>
-    <SpecificName>Pezakontistès Aravikós</SpecificName>
+    <SpecificName>Pezakontistes Aravikos</SpecificName>
     <Icon>units/sele/infantry_javelinist.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_village</Techs>

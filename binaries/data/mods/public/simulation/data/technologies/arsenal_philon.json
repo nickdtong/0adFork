@@ -1,6 +1,9 @@
 {
 	"supersedes": "dock_efficiency",
 	"genericName": "Arsenal of Philon",
+	"specificName": {
+		"athen": "Skeuothēkē Philōnos"
+	},
 	"description": "The arsenal was mainly used as a warehouse for materials and instruments for the equipment of warships.",
 	"cost": {
 		"wood": 300,

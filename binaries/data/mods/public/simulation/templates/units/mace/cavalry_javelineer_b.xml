@@ -5,7 +5,7 @@
     <Lang>greek</Lang>
     <SelectionGroupName>units/mace/cavalry_javelineer_b</SelectionGroupName>
     <GenericName>Odrysian Skirmish Cavalry</GenericName>
-    <SpecificName>Hippakontistḕs Odrysós</SpecificName>
+    <SpecificName>Hippakontistēs Odrysos</SpecificName>
     <Icon>units/mace/cavalry_javelinist.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_town</Techs>

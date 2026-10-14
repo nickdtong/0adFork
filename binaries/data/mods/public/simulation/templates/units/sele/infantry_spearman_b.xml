@@ -5,7 +5,7 @@
     <Lang>greek</Lang>
     <SelectionGroupName>units/sele/infantry_spearman_b</SelectionGroupName>
     <GenericName>Militia Thureos Spearman</GenericName>
-    <SpecificName>Thureophóros Politès</SpecificName>
+    <SpecificName>Thureophoros Polites</SpecificName>
     <Icon>units/sele/infantry_spearman_2.png</Icon>
   </Identity>
   <Promotion>

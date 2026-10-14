@@ -4,7 +4,7 @@
     <Civ>ptol</Civ>
     <SelectionGroupName>units/ptol/cavalry_javelineer_merc_b</SelectionGroupName>
     <GenericName>Tarantine Settler Cavalry</GenericName>
-    <SpecificName>Hippeús Tarantînos</SpecificName>
+    <SpecificName>Hippeus Tarantinos</SpecificName>
     <Icon>units/hele/tarentine_cavalry_e.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_town</Techs>

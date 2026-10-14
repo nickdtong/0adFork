@@ -5,7 +5,7 @@
     <Lang>greek</Lang>
     <SelectionGroupName>units/sele/cavalry_javelineer_b</SelectionGroupName>
     <GenericName>Militia Cavalry</GenericName>
-    <SpecificName>Hippakontistès Politès</SpecificName>
+    <SpecificName>Hippakontistes Polites</SpecificName>
     <Icon>units/sele/cavalry_militia.png</Icon>
   </Identity>
   <Promotion>

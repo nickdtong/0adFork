@@ -2,7 +2,7 @@
 <Entity parent="template_unit_siege_boltshooter">
   <Identity>
     <Civ>mace</Civ>
-    <SpecificName>Oxybelḗs</SpecificName>
+    <SpecificName>Oxybelēs</SpecificName>
     <Icon>units/hele/siege_oxybeles_packed.png</Icon>
     <Requirements>
       <Techs datatype="tokens">-phase_city phase_town</Techs>

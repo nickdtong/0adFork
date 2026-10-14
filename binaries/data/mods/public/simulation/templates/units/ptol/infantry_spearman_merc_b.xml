@@ -11,7 +11,7 @@
     <Civ>ptol</Civ>
     <SelectionGroupName>units/ptol/infantry_spearman_merc_b</SelectionGroupName>
     <GenericName>Mercenary Thureos Spearman</GenericName>
-    <SpecificName>Thureophóros Misthophóros</SpecificName>
+    <SpecificName>Thureophoros Misthophoros</SpecificName>
     <Icon>units/ptol/infantry_spearman_2.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_town</Techs>

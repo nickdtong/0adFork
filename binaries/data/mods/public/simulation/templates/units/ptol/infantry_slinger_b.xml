@@ -11,7 +11,7 @@
     <Civ>ptol</Civ>
     <SelectionGroupName>units/ptol/infantry_slinger_b</SelectionGroupName>
     <GenericName>Judean Slinger</GenericName>
-    <SpecificName>Hebraikós Sphendonḗtēs</SpecificName>
+    <SpecificName>Hebraikos Sphendonētēs</SpecificName>
     <Icon>units/ptol/infantry_slinger.png</Icon>
     <Requirements>
       <Techs datatype="tokens">phase_village</Techs>

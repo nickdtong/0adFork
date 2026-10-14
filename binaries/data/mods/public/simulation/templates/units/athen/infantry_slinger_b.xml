@@ -3,7 +3,7 @@
   <Identity>
     <SelectionGroupName>units/athen/infantry_slinger_b</SelectionGroupName>
     <GenericName>Athenian Slinger Militia</GenericName>
-    <SpecificName>Psilòs Athēnaîos</SpecificName>
+    <SpecificName>Psilos Athēnaios</SpecificName>
     <Icon>units/athen/infantry_slinger.png</Icon>
   </Identity>
   <Promotion>

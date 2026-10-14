@@ -5,7 +5,7 @@ Identity.prototype.Schema =
 	"<a:example>" +
 		"<Civ>athen</Civ>" +
 		"<GenericName>Athenian Hoplite</GenericName>" +
-		"<SpecificName>Hoplī́tēs Athēnaïkós</SpecificName>" +
+		"<SpecificName>Hoplitēs Athēnaios</SpecificName>" +
 		"<Icon>units/athen_infantry_spearman.png</Icon>" +
 	"</a:example>" +
 	"<element name='Civ' a:help='Civilization that this unit is primarily associated with, typically a 4-letter code. Choices include: gaia (world objects), skirm (skirmish map placeholders), achae (Achaemenids), athen (Athenians), brit (Britons), cart (Carthaginians), gaul (Gauls), han (Han Chinese), iber (Iberians), kush (Kushites), mace (Macedonians), maur (Mauryas), ptol (Ptolemies), rome (Romans), sele (Seleucids), spart (Spartans).'>" +
