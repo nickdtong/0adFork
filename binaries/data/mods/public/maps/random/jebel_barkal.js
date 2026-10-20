@@ -910,6 +910,7 @@ export function* generateMap(mapSettings)
 		[areaPaths]);
 
 	g_Map.log("Placing city districts");
+	const avoidPaths = new StaticConstraint(avoidClasses(clPath, 0));
 	for (let y = 1; y < gridPointsY; ++y)
 		for (let x = 1; x < gridPointsX; ++x)
 			createArea(
@@ -926,7 +927,7 @@ export function* generateMap(mapSettings)
 						(-cityGridAngle[y][x - 1] - cityGridAngle[y][x]) / 2, 0),
 					new TileClassPainter(clCity)
 				],
-				new StaticConstraint(avoidClasses(clPath, 0)));
+				avoidPaths);
 
 	let entitiesGates;
 	if (placeNapataWall)
