@@ -42,9 +42,22 @@ CityPainter.prototype.paint = function(area)
 
 	const processed = new Array(mapSize).fill(0).map(() => new Uint8Array(mapSize));
 
-	for (let x = 0; x < mapSize; x += 0.5)
+	const areaPoints = area.getPoints();
+	if (!areaPoints.length)
+		return;
+
+	// Scan only the bounding box of the area in the rotated frame
+	const box = getBoundingBox(areaPoints.map(point => point.clone().rotateAround(-this.angle, mapCenter)));
+
+	// The margin covers the rounding
+	const startX = Math.clamp(Math.floor((box.min.x - 2) * 2) / 2, 0, mapSize);
+	const startY = Math.clamp(Math.floor((box.min.y - 2) * 2) / 2, 0, mapSize);
+	const endX = Math.clamp(box.max.x + 2, 0, mapSize);
+	const endY = Math.clamp(box.max.y + 2, 0, mapSize);
+
+	for (let x = startX; x < endX; x += 0.5)
 	{
-		for (let y = 0; y < mapSize; y += 0.5)
+		for (let y = startY; y < endY; y += 0.5)
 		{
 			const point = new Vector2D(x, y).rotateAround(this.angle, mapCenter).round();
 			if (!area.contains(point) || processed[point.x][point.y] || !g_Map.validTilePassable(point))
