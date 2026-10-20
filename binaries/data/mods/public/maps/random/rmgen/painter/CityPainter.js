@@ -40,6 +40,12 @@ CityPainter.prototype.paint = function(area)
 	// if it would use a custom, more fine-grained obstruction grid
 	const tileClass = g_Map.createTileClass();
 
+	const placeConstraint = new AndConstraint([
+		new StayAreasConstraint([area]),
+		avoidClasses(tileClass, 0),
+		new PassableMapAreaConstraint()
+	]);
+
 	const processed = new Array(mapSize).fill(0).map(() => new Uint8Array(mapSize));
 
 	const areaPoints = area.getPoints();
@@ -77,8 +83,7 @@ CityPainter.prototype.paint = function(area)
 				const obstructionCorners = template.obstructionCorners.map(obstructionCorner =>
 					Vector2D.add(point, obstructionCorner.clone().rotate(buildingAngle)));
 
-				const obstructionPoints = new ConvexPolygonPlacer(obstructionCorners, 0).place(
-					new AndConstraint([new StayAreasConstraint([area]), avoidClasses(tileClass, 0), new PassableMapAreaConstraint()]));
+				const obstructionPoints = new ConvexPolygonPlacer(obstructionCorners, 0).place(placeConstraint);
 
 				if (!obstructionPoints)
 					continue;
