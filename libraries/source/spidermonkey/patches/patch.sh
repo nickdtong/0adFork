@@ -11,6 +11,11 @@ PATCHES="../patches"
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1588340
 patch -p1 <"${PATCHES}"/FixRustLinkage.diff
 
+# Fix rustc target detection error on Linux for newer Rust versions (>= 1.98).
+# https://bugzilla.mozilla.org/show_bug.cgi?id=2053518
+# https://bugzilla.mozilla.org/show_bug.cgi?id=2068205
+patch -p1 <"${PATCHES}"/FixRustTargetDetection.diff
+
 # Differentiate debug/release library names.
 patch -p1 <"${PATCHES}"/FixLibNames.diff
 
