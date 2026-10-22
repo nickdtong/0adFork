@@ -23,7 +23,7 @@
 #include "gui/ObjectBases/IGUIObject.h"
 #include "lib/alignment.h"
 #include "lib/allocators/DynamicArena.h"
-#include "lib/allocators/STLAllocators.h"
+#include "ps/memory/AllocatorAdapter.h"
 
 #include <algorithm>
 #include <utility>
@@ -60,7 +60,7 @@ public:
 	static void RecurseVisibleObject(IGUIObject* object, void(IGUIObject::* callbackFunction)(Args... args), Args&&... args)
 	{
 		using Arena = Allocators::DynamicArena<128 * KiB>;
-		using ObjectListAllocator = ProxyAllocator<VisibleObject, Arena>;
+		using ObjectListAllocator = PS::Memory::AllocatorAdapter<VisibleObject, Arena>;
 		Arena arena;
 
 		std::vector<VisibleObject, ObjectListAllocator> visibleObjects((ObjectListAllocator(arena)));

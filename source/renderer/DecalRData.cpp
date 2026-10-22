@@ -29,13 +29,13 @@
 #include "graphics/Terrain.h"
 #include "graphics/TextureManager.h"
 #include "lib/alignment.h"
-#include "lib/allocators/STLAllocators.h"
 #include "lib/debug.h"
 #include "lib/posix/posix_types.h"
 #include "maths/Matrix3D.h"
 #include "ps/CLogger.h"
 #include "ps/CStrIntern.h"
 #include "ps/CStrInternStatic.h"
+#include "ps/memory/AllocatorAdapter.h"
 #include "ps/memory/LinearAllocator.h"
 #include "ps/Profile.h"
 #include "renderer/Renderer.h"
@@ -145,7 +145,7 @@ void CDecalRData::RenderDecals(
 
 	PS::Memory::ScopedLinearAllocator scopedLinearAllocator{g_Renderer.GetLinearAllocator()};
 
-	using Batches = std::vector<SDecalBatch, ProxyAllocator<SDecalBatch, PS::Memory::ScopedLinearAllocator>>;
+	using Batches = std::vector<SDecalBatch, PS::Memory::AllocatorAdapter<SDecalBatch, PS::Memory::ScopedLinearAllocator>>;
 	Batches batches((Batches::allocator_type(scopedLinearAllocator)));
 	batches.reserve(decals.size());
 

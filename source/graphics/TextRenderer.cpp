@@ -210,9 +210,9 @@ void CTextRenderer::Render(
 	const CVector2D& transformScale, const CVector2D& translation,
 	const bool debugFontBox, const CColor& debugBoxColor)
 {
-	std::vector<std::uint16_t, ProxyAllocator<std::uint16_t, PS::Memory::ScopedLinearAllocator>> indices{m_ScopedLinearAllocator};
-	std::vector<CVector2D, ProxyAllocator<CVector2D, PS::Memory::ScopedLinearAllocator>> positions{m_ScopedLinearAllocator};
-	std::vector<CVector2D, ProxyAllocator<CVector2D, PS::Memory::ScopedLinearAllocator>> uvs{m_ScopedLinearAllocator};
+	std::vector<std::uint16_t, PS::Memory::AllocatorAdapter<std::uint16_t, PS::Memory::ScopedLinearAllocator>> indices{m_ScopedLinearAllocator};
+	std::vector<CVector2D, PS::Memory::AllocatorAdapter<CVector2D, PS::Memory::ScopedLinearAllocator>> positions{m_ScopedLinearAllocator};
+	std::vector<CVector2D, PS::Memory::AllocatorAdapter<CVector2D, PS::Memory::ScopedLinearAllocator>> uvs{m_ScopedLinearAllocator};
 
 	// Try to merge non-consecutive batches that share the same font/color/translate:
 	// sort the batch list by font, then merge the runs of adjacent compatible batches
