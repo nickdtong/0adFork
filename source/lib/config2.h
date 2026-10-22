@@ -36,16 +36,6 @@
 # define CONFIG2_DAP_INTERFACE 1
 #endif // !CONFIG2_DAP_INTERFACE
 
-// this enables/disables the actual checking done by OverrunProtector
-// (quite slow, entailing mprotect() before/after each access).
-// define to 1 here or in the relevant module if you suspect mem corruption.
-// we provide this option because OverrunProtector requires some changes to
-// the object being wrapped, and we want to leave those intact but not
-// significantly slow things down except when needed.
-#ifndef CONFIG2_ALLOCATORS_OVERRUN_PROTECTION
-# define CONFIG2_ALLOCATORS_OVERRUN_PROTECTION 0
-#endif
-
 #ifndef CONFIG2_FILE_ENABLE_AIO
 // work around a bug introduced in Linux 2.6.38
 // (http://www.wildfiregames.com/forum/index.php?showtopic=14561&view=findpost&p=217710)
