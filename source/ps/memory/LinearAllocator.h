@@ -25,6 +25,7 @@
 #include <cstddef>
 #include <fmt/format.h>
 #include <memory>
+#include <version>
 
 namespace PS::Memory
 {
@@ -33,7 +34,8 @@ namespace PS::Memory
  * Linear allocator (also known as an arena allocator or bump allocator) is
  * a simple and fast system that allocates memory sequentially from a single
  * growing memory buffer. Each allocation only moves a free pointer forward.
- * Releasing all allocations happens at the Release call.
+ * Releasing all allocations happens at the Release call. The allocated memory
+ * is not initialized.
  *
  * It's not thread-safe.
  *
@@ -48,7 +50,12 @@ class LinearAllocator
 {
 public:
 	LinearAllocator(const std::size_t initialSize, const std::size_t maxCapacity)
-		: m_Buffer{std::make_unique<std::byte[]>(initialSize)}, m_Capacity{initialSize}, m_MaxCapacity{maxCapacity}
+		: m_Capacity{initialSize}, m_MaxCapacity{maxCapacity},
+#if defined(__cpp_lib_smart_ptr_for_overwrite)
+		m_Buffer{std::make_unique_for_overwrite<std::byte[]>(initialSize)}
+#else
+		m_Buffer{std::make_unique<std::byte[]>(initialSize)}
+#endif
 	{
 		ENSURE(initialSize > 0);
 	}
@@ -72,7 +79,11 @@ public:
 					"Tried to allocate from LinearAllocator with a size of {} but the capacity is only {}",
 					n, m_Capacity)};
 			}
+#if defined(__cpp_lib_smart_ptr_for_overwrite)
+			m_Buffer = std::make_unique_for_overwrite<std::byte[]>(m_Capacity);
+#else
 			m_Buffer = std::make_unique<std::byte[]>(m_Capacity);
+#endif
 		}
 		void* ptr{m_Buffer.get() + m_Size};
 		m_Size += n;
